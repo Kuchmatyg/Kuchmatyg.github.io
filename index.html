@@ -1,1 +1,122 @@
-Привет денчик!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Личный сайт Данила Коваленко, Full-stack Developer с опытом в DevSecOps и Web3">
+  <title>Данил Коваленко - Full-stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* Основной стиль */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    section {
+      padding: 50px;
+      text-align: center;
+      margin: 0;
+    }
+    h1, h2, h3 {
+      margin: 0;
+      color: #2c3e50;
+    }
+    .intro {
+      background: linear-gradient(135deg, #2980b9, #8e44ad);
+      color: white;
+      padding: 100px 0;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    .footer {
+      background-color: #34495e;
+      color: white;
+      padding: 20px 0;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="intro">
+    <h1>Привет! Я Данил Коваленко</h1>
+    <h2>Full-stack Developer | DevSecOps | Quantum ML | Web3</h2>
+    <p>С 10-летним опытом работы в разработке, специализируюсь на Full-stack, безопасности, квантовых вычислениях и Web3.</p>
+  </section>
+
+  <section>
+    <h2>Обо мне</h2>
+    <p>Я профессиональный разработчик с глубоким пониманием технологий Full-stack, DevSecOps и квантовых вычислений. Мой опыт включает создание распределённых вычислительных кластеров и работу с криптографией в Web3. Я работаю над проектами, которые решают реальные задачи, используя новейшие достижения в области машинного обучения и вычислений.</p>
+  </section>
+
+  <section>
+    <h2>Мои Компетенции</h2>
+    <div class="skills">
+      <div class="card">
+        <h3>Full-stack Development</h3>
+        <p>React, Node.js, Express, MongoDB, REST APIs, GraphQL</p>
+      </div>
+      <div class="card">
+        <h3>DevSecOps</h3>
+        <p>Docker, Kubernetes, CI/CD, AWS, GCP, Jenkins</p>
+      </div>
+      <div class="card">
+        <h3>Quantum Machine Learning</h3>
+        <p>Quantum computing, Qiskit, TensorFlow Quantum, IBM Quantum</p>
+      </div>
+      <div class="card">
+        <h3>Web3 & Crypto</h3>
+        <p>Ethereum, Solidity, Smart Contracts, Blockchain, DeFi</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Контакты</h2>
+    <p>Свяжитесь со мной для сотрудничества или консультаций:</p>
+    <a href="mailto:kovalenko.danil@domain.com">kovalenko.danil@domain.com</a>
+  </section>
+
+  <section class="footer">
+    <p>© 2025 Данил Коваленко. Все права защищены.</p>
+  </section>
+
+  <script>
+    // Простая анимация появления
+    document.addEventListener("DOMContentLoaded", function() {
+      const introSection = document.querySelector('.intro');
+      introSection.style.opacity = 0;
+      setTimeout(() => {
+        introSection.style.transition = "opacity 1s";
+        introSection.style.opacity = 1;
+      }, 500);
+    });
+  </script>
+  
+</body>
+</html>
